@@ -1,0 +1,15 @@
+{
+  "cenario": "Alto Impar",
+  "valor": 77,
+  "caminho": [
+    "classify",
+    "complex_process",
+    "retry"
+  ],
+  "logs": [
+    "classify -> Sim, 77 \u00e9 considerado alto, pois \u00e9 maior ou igual a 50.",
+    "complex_process -> O valor 77 pode ser analisado sob diferentes perspectivas, desde sua representa\u00e7\u00e3o num\u00e9rica at\u00e9 sua poss\u00edvel rela\u00e7\u00e3o com conceitos matem\u00e1ticos, cient\u00edficos ou culturais.",
+    "retry -> O valor \u00edmpar 77 acionou retry, indicando que ocorreu um erro ou exce\u00e7\u00e3o durante um processo e \u00e9 necess\u00e1rio tentar novamente."
+  ],
+  "resumo": "O fluxo LangGraph executado foi do tipo de classifica\u00e7\u00e3o e processamento de dados, seguindo o caminho \"classify\" -> \"complex_process\" -> \"retry\", demonstrando um comportamento geral de an\u00e1lise, processamento e tratamento de erros."
+}

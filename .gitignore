@@ -5,6 +5,3 @@ venv/
 
 # Env
 .env
-
-# Outputs
-plots/
