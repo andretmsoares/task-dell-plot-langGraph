@@ -58,7 +58,7 @@ def draw_flow(
         transform=ax.transAxes
     )
 
-    # 🔁 edges
+    #edges
     for src, dst, label in edges:
         xs, ys = node_pos[src]
         xd, yd = node_pos[dst]
@@ -92,12 +92,13 @@ def draw_flow(
                 bbox=dict(boxstyle="round,pad=0.18", fc=C_BG, ec="none", alpha=0.85)
             )
 
-    # 🔲 nodes
+    #nodes
     for node, (x, y) in node_pos.items():
         terminal = node in ("__start__", "__end__")
         active = (node in activated) or terminal
 
-        w, h = 0.14, 0.09
+        scale = max(0.6, 1 - len(node_pos) * 0.015)
+        w, h = 0.14 * scale, 0.09 * scale
 
         if active:
             for scale in [1.7, 1.4, 1.15]:

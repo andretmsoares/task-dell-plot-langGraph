@@ -66,7 +66,6 @@ def run_case(value, scenario):
 
 if __name__ == "__main__":
     
-    # print(TOKEN)
     os.makedirs(OUTPUT_DIR, exist_ok=True)
 
     run_case(23, "Baixo")

@@ -1,0 +1,15 @@
+{
+  "cenario": "Alto Par",
+  "valor": 84,
+  "caminho": [
+    "classify",
+    "complex_process",
+    "call_tool"
+  ],
+  "logs": [
+    "classify -> Sim, o valor 84 \u00e9 alto, pois \u00e9 maior ou igual a 50.",
+    "complex_process -> O valor 84 requer uma an\u00e1lise complexa que envolve considerar m\u00faltiplos fatores e vari\u00e1veis para entender seu significado e implica\u00e7\u00f5es.",
+    "call_tool -> O valor 84 \u00e9 par."
+  ],
+  "resumo": "O fluxo LangGraph executado \u00e9 do tipo de an\u00e1lise de valor, seguindo o caminho \"classify\" -> \"complex_process\" -> \"call_tool\", e apresenta um comportamento geral de avalia\u00e7\u00e3o e processamento de informa\u00e7\u00f5es de forma l\u00f3gica e sistem\u00e1tica."
+}
