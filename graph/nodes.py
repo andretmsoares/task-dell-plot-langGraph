@@ -15,7 +15,7 @@ def classify_node(state: FlowState) -> FlowState:
     
     logs.append(f"classify -> {answer}")
 
-    return {**state, "complexity": complexity, "result": "teste-classify", "execution_path": path, "llm_logs": logs}
+    return {**state, "complexity": complexity, "result": answer, "execution_path": path, "llm_logs": logs}
 
 
 def simple_process(state: FlowState) -> FlowState:
@@ -26,7 +26,7 @@ def simple_process(state: FlowState) -> FlowState:
     # answer = "teste-simple-process"
     logs.append(f"simple_process -> {answer}")
 
-    return {**state, "result": "teste-simple-process", "execution_path": path, "llm_logs": logs}
+    return {**state, "result": answer, "execution_path": path, "llm_logs": logs}
 
 
 def complex_process(state: FlowState) -> FlowState:
@@ -37,7 +37,7 @@ def complex_process(state: FlowState) -> FlowState:
     # answer = "teste-complex-process"
     logs.append(f"complex_process -> {answer}")
 
-    return {**state, "result": "teste-complex-process", "execution_path": path, "llm_logs": logs}
+    return {**state, "result": answer, "execution_path": path, "llm_logs": logs}
 
 
 def call_tool(state: FlowState) -> FlowState:
@@ -48,7 +48,7 @@ def call_tool(state: FlowState) -> FlowState:
     # answer = "teste-call-tool"
     logs.append(f"call_tool -> {answer}")
 
-    return {**state, "result": "teste-call-tool", "execution_path": path, "llm_logs": logs}
+    return {**state, "result": answer, "execution_path": path, "llm_logs": logs}
 
 
 def retry(state: FlowState) -> FlowState:
@@ -59,4 +59,4 @@ def retry(state: FlowState) -> FlowState:
     # answer = "teste-retry"
     logs.append(f"retry -> {answer}")
 
-    return {**state, "result": "teste-retry", "execution_path": path, "llm_logs": logs}
+    return {**state, "result": answer, "execution_path": path, "llm_logs": logs}
